@@ -254,6 +254,7 @@ function updateButtons() {
     els.btnPause.disabled = true;
     els.btnStart.textContent = state.timerState === STATE_IDLE ? '▶ 开始' : '▶ 继续';
   }
+  document.querySelector('.timer-ring-container').classList.toggle('running', state.isRunning);
 }
 
 // ========== Tray & Notification ==========
